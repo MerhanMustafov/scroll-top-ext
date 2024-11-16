@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Scroll To Top",
+    "version": "1.0",
+    "description": "Adds a button to scroll to top after 30% scroll",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": ["styles.css"],
+            "js": ["content.js"]
+        }
+    ]
+}
